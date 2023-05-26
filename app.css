@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Pacifico&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.pad {
+  padding: 3vh 5vw;
+}
+body {
+  font-family: "Instrument Sans", sans-serif;
+}
+header {
+  background: url(./images/bg1.jpeg) no-repeat;
+}
+.navbar {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 23% 50%;
+  grid-template-areas: "logo nav";
+}
+.logotip {
+  display: flex;
+  grid-area: logo;
+  justify-content: space-between;
+  align-items: end;
+  font-family: "Pacifico", cursive;
+  font-size: 15px;
+}
+nav {
+  grid-area: nav;
+}
+nav ul {
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-around;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  width: 95px;
+}
+.intro h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 12vh 0 8vh 0;
+  font-family: "Barlow", sans-serif;
+}
+.intro h3 {
+  width: 40%;
+  font-weight: 400;
+}
+
+.btn1 {
+  font-size: 20px;
+  border: none;
+  margin: 10vh 0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background-color: rgb(31, 31, 32);
+  color: white;
+  font-family: "Barlow", sans-serif;
+}
+
+main .nos {
+  background-color: #1f1e1e;
+  color: rgb(219, 214, 214);
+  display: grid;
+  grid-template-columns: 50% 33%;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas: "cuidamos nosautos";
+}
+.cuidamos {
+  grid-area: cuidamos;
+}
+.cuidamos img {
+  border-radius: 30px;
+  width: 100%;
+  border: 5px solid black;
+  box-shadow: -1px 0px 53px -3px rgb(58, 57, 57);
+}
+.cuidamos h1 {
+  font-size: 35px;
+}
+.cuidamos h2 {
+  margin: 20px 0 40px 0;
+}
+.nosautos {
+  grid-area: nosautos;
+  font-size: 20px;
+}
+.nos .name {
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+}
+.check li {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+.check li i {
+  color: #d9a988;
+  font-size: 30px;
+  margin-right: 10px;
+}
+main .modelos {
+  background-color: #d9a988;
+}
+.modelos .fotos img {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
